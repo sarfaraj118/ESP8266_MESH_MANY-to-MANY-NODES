@@ -1,9 +1,3 @@
-/*
-Geekstips.com
-IoT project - Communication between two ESP8266 - Talk with Each Other
-ESP8266 Arduino code example
-*/
-//#include <DHT.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
@@ -30,9 +24,9 @@ String serverHost_ack1 ="http://192.167.8.6/response";
 //String serverHost2 = "http://192.169.7.6/feed";
 //String serverHost_ack2 ="http://192.169.7.6/response";
 String data;
-// DEEP_SLEEP Timeout interval
+
 int sleepInterval = 5;
-// DEEP_SLEEP Timeout interval when connecting to AP fails
+
 int failConnectRetryInterval = 2;
 int counter = 0,rou_x=0,Status=1,reset =0;
 char *X;
